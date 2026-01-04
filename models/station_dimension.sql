@@ -1,6 +1,6 @@
 {{ config(materialized='table') }}
 with cte as (
-  select 
+  select distinct 
  START_STATION_ID AS Station_ID,
   START_STATION_NAME AS Station_name,
   START_STATION_LAT AS Station_LAT,
