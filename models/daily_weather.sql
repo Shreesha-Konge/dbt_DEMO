@@ -1,3 +1,4 @@
+{{ config(materialized='table') }}
 with cte as (
   select 
     DATE(TIME) AS DAILY_WEATHER,
